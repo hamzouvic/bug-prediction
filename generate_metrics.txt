@@ -1,0 +1,6 @@
+create -languages C++ Java C:\Users\sif\Desktop\mgl869\metrics\db\my_project_2.1.0.und
+add C:\Users\sif\Desktop\mgl869\metrics\hive
+settings -metrics all 
+settings -metricsOutputFile C:\Users\sif\Desktop\mgl869\metrics\metrics_reports\metrics_2.1.0.csv
+analyze
+metrics

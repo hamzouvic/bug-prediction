@@ -43,6 +43,7 @@ def generate_metrics_command_file():
 
         if not start_processing:
             continue
+        tag = 'release-2.0.0'
 
         print(f"checkout to tag: {tag}")
         subprocess.run(["git", "-C", REPO_PATH, "checkout", tag], check=True)
@@ -69,6 +70,7 @@ def generate_metrics_command_file():
         except subprocess.CalledProcessError as e:
             print(f"Error occurred while running Understand commands: {e}")
         print('-------------------------------------------------')
+        exit()
 
 # Run the script
 if __name__ == "__main__":
